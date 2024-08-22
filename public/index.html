@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Interactive-quiz</title>
+</head>
+
+<body>
+    <nav>
+        <div class="logo"><h3>Meta Quiz</h3></div>
+    </nav>
+
+    <div class="category-selection">
+        <label id="category-label" for="category">
+            <h2>Select a category to test:</h2>
+        </label>
+        <select name="" id="category">
+            <option value="Select a Category">Select a category</option>
+            <option value="Business">Business</option>
+            <option value="Finance">Finance</option>
+            <option value="Fashion">Fashion</option>
+            <option value="Politics">Politics</option>
+            <option value="Science">Science</option>
+
+        </select>
+    </div>
+    <div class="control-button1"><input id="back-button" class="element-to-hide" type="button" value="BACK"
+            onclick="back()">
+        <input id="start-button" class="element-to-hide" type="button" value="START" onclick="start()">
+    </div>
+
+
+    <section>
+        <div class="question-section">
+            <form id="question" class="question element-to-hide">
+                <h1 id="category-to-test"></h1>
+                <fieldset>
+                    <legend id="question-area">Question</legend>
+
+                    <input class="option-button" type="radio" name="" id="option-A" value="A">
+                    <label id="A" for="option-A"></label>
+                    <br>
+
+                    <input class="option-button" type="radio" name="" id="option-B" value="B">
+                    <label id="B" for="option-B"></label>
+                    <br>
+
+                    <input class="option-button" type="radio" name="" id="option-C" value="C">
+                    <label id="C" for="option-C"></label>
+                    <br>
+
+                    <input class="option-button" type="radio" name="" id="option-D" value="D">
+                    <label id="D" for="option-D"></label>
+                    <br>
+                </fieldset>
+            </form>
+            <div class="control-button2"><button id="previous-button" class="element-to-hide"
+                    type="submit">PREVIOUS</button>
+                <button id="next-button" class="element-to-hide" type="submit">NEXT</button>
+            </div>
+            <div id="submit-message" class="element-to-hide">
+                <h5>Are you sure you want to submit? <br> Check through your answers if time Permits!</h5>
+                <input id="submit-answer" type="button" value="SUBMIT">
+            </div>
+            <input class="element-to-hide" id="view-score" type="button" value="VIEW SCORE">
+            <div class="element-to-hide" id="result">
+            </div>
+             <div id="pick-answer" class="element-to-hide">
+            <p>Don't forget to come back to pick your answer!</p>
+        </div>
+        </div>
+       
+
+    </section>
+    <script src="quiz.js"></script>
+</body>
+
+</html>
