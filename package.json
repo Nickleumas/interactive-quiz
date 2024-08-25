@@ -1,5 +1,5 @@
 {
-  "name": "quiz-test",
+  "name": "meta-quiz",
   "version": "1.0.0",
   "main": "index.js",
   "type": "module",
@@ -9,5 +9,9 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.19.2"
+  }
 }

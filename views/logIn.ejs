@@ -1,0 +1,14 @@
+<%-include('partials/header.ejs') %>
+        <form action="/log-in" method="POST">
+                <div class="error-message"> <%- errorMessage %></div>        
+            <h5>Log in to start quiz</h5>
+            <fieldset class="log-in-form">
+                <label class="log-in-label" for="email">Enter your email</label class="log-up-label " class="log-up-label class="log-up-label " ">
+                <input type="email" name="login-email" id="email">
+                <label class="log-in-label"  for="password">Enter your password</label class="log-up-label ">
+                <input type="password" name="login-password" id="password">
+            </fieldset>
+            <input class="log-in-button" type="submit" value="Log in">
+        </form>
+    </main>
+    <%-include('partials/footer.ejs') %>

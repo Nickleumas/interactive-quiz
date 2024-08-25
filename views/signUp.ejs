@@ -1,0 +1,16 @@
+<%-include('partials/header.ejs') %>
+        <form action="/sign-up" method="POST">
+            <h5>Sign up for the quiz</h5>
+            <fieldset class="sign-up-form">
+                <label class="sign-up-label" for="first-name">First Name:</label>
+                <input type="text" name="first-name" id="first-name" required>
+                <label class="sign-up-label" for="last-name">Last Name:</label>
+                <input type="text" name="last-name" id="last-name" required>
+                <label class="sign-up-label" for="email">Email:</label>
+                <input type="email" name="email" id="email" required>
+                <label class="sign-up-label" for="password">Password:</label>
+                <input type="password" name="password" id="password" required>
+            </fieldset>
+            <input class="sign-up-button" type="submit" value="Sign up">
+        </form>
+        <%-include('partials/footer.ejs') %>
