@@ -2,11 +2,15 @@
 
 <footer>
     <ul>
-        <li>Home</li>
-        <li>About Quiz</li>
-        <li>features</li>
+        <a href="/"><li>Home</li></a>
+        <a href="/"><li>About Quiz</li></a>
+        <a href="/"><li>features</li></a>
     </ul>
-    <div class="copyright">2024</div>
+    <div class="copyright">
+        <%var currentYear=new Date().getFullYear();%>
+            <p class="Copyright">Copyright © <%= currentYear %>
+            </p>
+    </div>
 </footer>
 <script src="quiz.js"></script>
 </body>

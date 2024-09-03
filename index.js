@@ -19,10 +19,15 @@ app.use(express.static('public'));
 app.use(bodyParser.urlencoded({ extended: true }));  
 
 app.get('/', (req, res) => {
-    res.render('signUp.ejs',)
+    res.render('logIn.ejs', { errorMessage: '' });
   });
-
-  app.post('/sign-up', (req, res) => {
+app.get('/sign-up', (req, res) => {
+  res.render('signUp.ejs');
+});
+app.get('/log-in', (req, res) => {
+  res.render('logIn.ejs', { errorMessage: '' });
+})
+  app.post('/log-in', (req, res) => {
     firstName = req.body['first-name'];
     lastName = req.body['last-name'];
     email = req.body['email'];
@@ -30,7 +35,7 @@ app.get('/', (req, res) => {
     res.render('logIn.ejs', { errorMessage: '' });
   })
 
-  app.post('/log-in', (req, res) => {
+  app.post('/', (req, res) => {
     loginEmail = req.body['login-email'];
     loginPassword = req.body['login-password'];
     if (email === loginEmail && password === loginPassword) {

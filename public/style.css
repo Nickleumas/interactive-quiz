@@ -30,6 +30,7 @@ nav {
     padding: 2%;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     position: sticky;
     top: 0;
     z-index: 50;
@@ -39,6 +40,20 @@ nav {
     width: 100%;
     margin-left: 0.5em;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.nav-button {
+    width: 5em;
+    height: 2.5em;
+    font-size: 10px;
+    font-weight:500;
+    border-radius: 3pc;
+    margin: 2em 3px;
+    background-color: black;
+    color: beige;
+    border: none;
+    cursor: pointer;
 }
 /*CSS for sign-up and log-in page */
 form {
@@ -198,6 +213,10 @@ footer {
 ul {
     height: 10vh;
     margin: 0 0 1vh 2em;
+    color: #000;
+}
+ul a {
+    text-decoration: none;
     color: #000;
 }
 .copyright {
